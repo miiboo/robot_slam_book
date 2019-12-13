@@ -30,7 +30,7 @@ int main(int argc, char** argv)
     std::cout<<run_time.str();
    
     //display sift features
-    cv::putText(src_img,run_time.str(),cv::Point(30,30),cv::FONT_HERSHEY_TRIPLEX,0.8,cv::Scalar(255,255,255));
+    cv::putText(src_img,run_time.str(),cv::Point(30,30),cv::FONT_HERSHEY_TRIPLEX,1.5,cv::Scalar(0,0,0));
     cv::drawKeypoints(src_img,keypoints,src_img);
     cv::imshow("sift features",src_img);
 
